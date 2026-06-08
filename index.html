@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor & Arte</title>
+  
+  <!-- Importação de Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Importação do Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO COMPARTILHADO -->
+  <header class="cabecalho">
+    <a href="#" class="logo">Sabor &<span> Arte</span></a>
+    <nav class="navbar">
+      <ul class="nav-lista">
+        <li><a href="#" class="nav-link">Início</a></li>
+        <li><a href="#" class="nav-link ativo">Receitas</a></li>
+        <li><a href="#" class="nav-link">Sobre</a></li>
+        <li><a href="#" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="#" class="btn-painel">Painel Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- BANNER HERO DA SEÇÃO -->
+    <section class="receitas-banner animar-subir">
+      <span class="receitas-banner-tag"><i class="fas fa-utensils"></i> Receitas Selecionadas</span>
+      <h1 class="receitas-banner-titulo">Cozinhar é a arte<br>de criar memórias</h1>
+      <p class="receitas-banner-sub">
+        Encontre receitas práticas e deliciosas para qualquer ocasião, testadas e aprovadas por nossos chefs para garantir o melhor sabor na sua mesa.
+      </p>
+      <div class="banner-numero-fundo">04</div>
+    </section>
+
+    <!-- DASHBOARD DE MÉTRICAS -->
+    <section class="dashboard">
+      <div class="dash-card animar-subir delay-1">
+        <i class="fas fa-book-open dash-card-icon"></i>
+        <h2 class="dash-title">Total de Receitas</h2>
+        <p class="dash-number">04</p>
+      </div>
+      <div class="dash-card animar-subir delay-2">
+        <i class="fas fa-clock dash-card-icon"></i>
+        <h2 class="dash-title">Tempo Médio</h2>
+        <p class="dash-number">35<span class="dash-unit">min</span></p>
+      </div>
+      <div class="dash-card animar-subir delay-3">
+        <i class="fas fa-tags dash-card-icon"></i>
+        <h2 class="dash-title">Categorias Ativas</h2>
+        <p class="dash-number">04</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- BARRA DE BUSCA E FILTROS RÁPIDOS -->
+    <div class="receitas-controles animar-fade">
+      <div class="busca-container">
+        <span class="busca-icone"><i class="fas fa-search"></i></span>
+        <input class="busca-input" type="text" placeholder="Buscar por pratos, ingredientes..." />
+      </div>
+      <div class="filtros-lista">
+        <button class="filtro-btn ativo">Todos</button>
+        <button class="filtro-btn">Sobremesa</button>
+        <button class="filtro-btn">Massa</button>
+        <button class="filtro-btn">Prato Principal</button>
+        <button class="filtro-btn">Salada</button>
+      </div>
+    </div>
+
+    <!-- SEÇÃO DA GRADE DE RECEITAS -->
+    <section class="receitas-section">
+      <p class="receitas-grid-titulo">4 receitas encontradas</p>
+
+      <div class="receitas-grid">
+        
+        <!-- CARD 1 (Destaque - Bolo de Cenoura) -->
+        <article class="receita-card destaque animar-subir delay-4">
+          <div class="receita-card-imagem">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Bolo de Cenoura">
+          </div>
+          <div class="receita-card-corpo">
+            <span class="badge badge-rosa"><i class="fas fa-cookie-bite"></i> Sobremesa</span>
+            <h3 class="receita-card-titulo">Bolo de Cenoura com Cobertura</h3>
+            <p class="receita-card-texto texto-3-linhas">
+              Um clássico bolo de cenoura super fofinho com aquela cobertura de chocolate crocante e irresistível que todo mundo ama. Perfeito para o café da tarde ou lanche especial.
+            </p>
+            <div class="receita-card-ingredientes">
+              <span>🥕 Cenoura</span>
+              <span>🍫 Chocolate</span>
+              <span>🌾 Farinha</span>
+            </div>
+            <div class="receita-card-rodape">
+              <span class="receita-card-meta"><i class="far fa-clock"></i> 45 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
+              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 (Fettuccine) -->
+        <article class="receita-card animar-subir delay-5">
+          <div class="receita-card-imagem">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80" alt="Macarrão à Bolonhesa">
+          </div>
+          <div class="receita-card-corpo">
+            <span class="badge badge-laranja"><i class="fas fa-plate-wheat"></i> Massa</span>
+            <h3 class="receita-card-titulo">Fettuccine à Bolonhesa Rústico</h3>
+            <p class="receita-card-texto texto-3-linhas">
+              Massa fettuccine servida com um autêntico molho bolonhesa rústico preparado com carnes selecionadas e tomates frescos cozidos lentamente.
+            </p>
+            <div class="receita-card-ingredientes">
+              <span>🍝 Massa</span>
+              <span>🥩 Carne Moída</span>
+              <span>🍅 Tomate</span>
+            </div>
+            <div class="receita-card-rodape">
+              <span class="receita-card-meta"><i class="far fa-clock"></i> 30 min · <span class="tag-dificuldade tag-medio">Médio</span></span>
+              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 (Risoto) -->
+        <article class="receita-card animar-subir delay-6">
+          <div class="receita-card-imagem">
+            <img src="https://images.unsplash.com/photo-1580249453715-13b3af2fc171?auto=format&fit=crop&w=600&q=80" alt="Risoto de Cogumelos">
+          </div>
+          <div class="receita-card-corpo">
+            <span class="badge badge-dourado"><i class="fas fa-utensils"></i> Prato Principal</span>
+            <h3 class="receita-card-titulo">Risoto Cremoso de Cogumelos</h3>
+            <p class="receita-card-texto texto-3-linhas">
+              Um risoto aromático e extremamente cremoso feito com cogumelos frescos, arroz arbóreo de alta qualidade e finalizado com bastante queijo parmesão.
+            </p>
+            <div class="receita-card-ingredientes">
+              <span>🍚 Arroz Arbóreo</span>
+              <span>🍄 Cogumelos</span>
+              <span>🧀 Parmesão</span>
+            </div>
+            <div class="receita-card-rodape">
+              <span class="receita-card-meta"><i class="far fa-clock"></i> 50 min · <span class="tag-dificuldade tag-dificil">Difícil</span></span>
+              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 (Salada) -->
+        <article class="receita-card animar-subir delay-6">
+          <div class="receita-card-imagem">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Salada Colorida">
+          </div>
+          <div class="receita-card-corpo">
+            <span class="badge badge-verde"><i class="fas fa-leaf"></i> Salada</span>
+            <h3 class="receita-card-titulo">Salada de Verão com Abacate</h3>
+            <p class="receita-card-texto texto-3-linhas">
+              Refrescante salada misturando folhas verdes selecionadas, tomates cereja suculentos e cubos cremosos de abacate maduro, regada a molho especial da casa.
+            </p>
+            <div class="receita-card-ingredientes">
+              <span>🥑 Abacate</span>
+              <span>🥬 Folhas Verdes</span>
+              <span>🍅 Tomate Cereja</span>
+            </div>
+            <div class="receita-card-rodape">
+              <span class="receita-card-meta"><i class="far fa-clock"></i> 15 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
+              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 (Parmegiana) -->
+        <article class="receita-card animar-subir delay-6">
+          <div class="receita-card-imagem">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Salada Colorida">
+          </div>
+          <div class="receita-card-corpo">
+            <span class="badge badge-verde"><i class="fas fa-leaf"></i>Parmegiana</span>
+            <h3 class="receita-card-titulo">Parmegiana</h3>
+            <p class="receita-card-texto texto-3-linhas">
+              É um clássico amado no Brasil, consistindo em carne (ou frango/berinjela) empanada e frita, coberta com muito molho de tomate, presunto, e generosas camadas de queijo mussarela e parmesão derretidos
+            </p>
+            <div class="receita-card-ingredientes">
+              <span>🍗 Frango</span>
+              <span>🧀 Queijo</span>
+              <span>🍅 Molho de Tomate</span>
+            </div>
+            <div class="receita-card-rodape">
+              <span class="receita-card-meta"><i class="far fa-clock"></i> 15 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
+              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PAGINAÇÃO -->
+    <div class="paginacao">
+      <button class="paginacao-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="paginacao-btn ativo">1</button>
+      <button class="paginacao-btn">2</button>
+      <button class="paginacao-btn">3</button>
+      <button class="paginacao-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ COMPARTILHADO -->
+  <footer class="rodape">
+    <p class="rodape-logo">Sabor & <span>Arte</span></p>
+    <p class="rodape-texto">© 2026 · Feito com <i class="fas fa-heart" style="color: var(--cor-acento);"></i> por e para amantes de culinária · Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
