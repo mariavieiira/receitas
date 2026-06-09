@@ -14,7 +14,7 @@
       <div class="dash-card animar-subir delay-1">
         <i class="fas fa-book-open dash-card-icon"></i>
         <h2 class="dash-title">Total de Receitas</h2>
-        <p class="dash-number">05</p>
+        <p class="dash-number">04</p>
       </div>
       <div class="dash-card animar-subir delay-2">
         <i class="fas fa-clock dash-card-icon"></i>
@@ -24,7 +24,7 @@
       <div class="dash-card animar-subir delay-3">
         <i class="fas fa-tags dash-card-icon"></i>
         <h2 class="dash-title">Categorias Ativas</h2>
-        <p class="dash-number">05</p>
+        <p class="dash-number">04</p>
       </div>
     </section>
 
@@ -51,120 +51,10 @@
 
       <div class="receitas-grid">
         
-        <!-- CARD 1 (Destaque - Bolo de Cenoura) -->
-        <article class="receita-card destaque animar-subir delay-4">
-          <div class="receita-card-imagem">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Bolo de Cenoura">
-          </div>
-          <div class="receita-card-corpo">
-            <span class="badge badge-rosa"><i class="fas fa-cookie-bite"></i> Sobremesa</span>
-            <h3 class="receita-card-titulo">Bolo de Cenoura com Cobertura</h3>
-            <p class="receita-card-texto texto-3-linhas">
-              Um clássico bolo de cenoura super fofinho com aquela cobertura de chocolate crocante e irresistível que todo mundo ama. Perfeito para o café da tarde ou lanche especial.
-            </p>
-            <div class="receita-card-ingredientes">
-              <span>🥕 Cenoura</span>
-              <span>🍫 Chocolate</span>
-              <span>🌾 Farinha</span>
-            </div>
-            <div class="receita-card-rodape">
-              <span class="receita-card-meta"><i class="far fa-clock"></i> 45 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
-              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </article>
+        @for (item of receita(); track $index) {
 
-        <!-- CARD 2 (Fettuccine) -->
-        <article class="receita-card animar-subir delay-5">
-          <div class="receita-card-imagem">
-            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80" alt="Macarrão à Bolonhesa">
-          </div>
-          <div class="receita-card-corpo">
-            <span class="badge badge-laranja"><i class="fas fa-plate-wheat"></i> Massa</span>
-            <h3 class="receita-card-titulo">Fettuccine à Bolonhesa Rústico</h3>
-            <p class="receita-card-texto texto-3-linhas">
-              Massa fettuccine servida com um autêntico molho bolonhesa rústico preparado com carnes selecionadas e tomates frescos cozidos lentamente.
-            </p>
-            <div class="receita-card-ingredientes">
-              <span>🍝 Massa</span>
-              <span>🥩 Carne Moída</span>
-              <span>🍅 Tomate</span>
-            </div>
-            <div class="receita-card-rodape">
-              <span class="receita-card-meta"><i class="far fa-clock"></i> 30 min · <span class="tag-dificuldade tag-medio">Médio</span></span>
-              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 3 (Risoto) -->
-        <article class="receita-card animar-subir delay-6">
-          <div class="receita-card-imagem">
-            <img src="https://s2-receitas.glbimg.com/APk8pOrM29fQle4OjOHifg9mUHg=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/2/7/7NkGZzQpWTB3ryM8kEFQ/capa-materia-gshow-2022-01-29t135328.257.png" alt="Risoto de Cogumelos">
-          </div>
-          <div class="receita-card-corpo">
-            <span class="badge badge-dourado"><i class="fas fa-utensils"></i> Prato Principal</span>
-            <h3 class="receita-card-titulo">Risoto Cremoso de Cogumelos</h3>
-            <p class="receita-card-texto texto-3-linhas">
-              Um risoto aromático e extremamente cremoso feito com cogumelos frescos, arroz arbóreo de alta qualidade e finalizado com bastante queijo parmesão.
-            </p>
-            <div class="receita-card-ingredientes">
-              <span>🍚 Arroz Arbóreo</span>
-              <span>🍄 Cogumelos</span>
-              <span>🧀 Parmesão</span>
-            </div>
-            <div class="receita-card-rodape">
-              <span class="receita-card-meta"><i class="far fa-clock"></i> 50 min · <span class="tag-dificuldade tag-dificil">Difícil</span></span>
-              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 4 (Salada) -->
-        <article class="receita-card animar-subir delay-6">
-          <div class="receita-card-imagem">
-            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Salada Colorida">
-          </div>
-          <div class="receita-card-corpo">
-            <span class="badge badge-verde"><i class="fas fa-leaf"></i> Salada</span>
-            <h3 class="receita-card-titulo">Salada de Verão com Abacate</h3>
-            <p class="receita-card-texto texto-3-linhas">
-              Refrescante salada misturando folhas verdes selecionadas, tomates cereja suculentos e cubos cremosos de abacate maduro, regada a molho especial da casa.
-            </p>
-            <div class="receita-card-ingredientes">
-              <span>🥑 Abacate</span>
-              <span>🥬 Folhas Verdes</span>
-              <span>🍅 Tomate Cereja</span>
-            </div>
-            <div class="receita-card-rodape">
-              <span class="receita-card-meta"><i class="far fa-clock"></i> 15 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
-              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 5 (Parmegiana) -->
-        <article class="receita-card animar-subir delay-6">
-          <div class="receita-card-imagem">
-            <img src="https://lirp.cdn-website.com/33406c6e/dms3rep/multi/opt/parmegiana-640w.webp" alt="Salada Colorida">
-          </div>
-          <div class="receita-card-corpo">
-            <span class="badge badge-verde"><i class="fas fa-leaf"></i>Parmegiana</span>
-            <h3 class="receita-card-titulo">Parmegiana</h3>
-            <p class="receita-card-texto texto-3-linhas">
-              É um clássico amado no Brasil, consistindo em carne (ou frango/berinjela) empanada e frita, coberta com muito molho de tomate, presunto, e generosas camadas de queijo mussarela e parmesão derretidos
-            </p>
-            <div class="receita-card-ingredientes">
-              <span>🍗 Frango</span>
-              <span>🧀 Queijo</span>
-              <span>🍅 Molho de Tomate</span>
-            </div>
-            <div class="receita-card-rodape">
-              <span class="receita-card-meta"><i class="far fa-clock"></i> 15 min · <span class="tag-dificuldade tag-facil">Fácil</span></span>
-              <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </article>
+        <app-receita [data]="item"></app-receita>
+        }
 
       </div>
     </section>

@@ -1,0 +1,26 @@
+<article class="receita-card animar-subir delay-6">
+  <div class="receita-card-imagem">
+    <img {{ data().imagem_url }}
+      src="https://lirp.cdn-website.com/33406c6e/dms3rep/multi/opt/parmegiana-640w.webp"
+      alt="Salada Colorida"
+   />
+  </div>
+  <div class="receita-card-corpo">
+    <span class="badge badge-verde"><i class="fas fa-leaf"></i>{{ data().categoria }}</span>
+    <h3 class="receita-card-titulo">{{ data().titulo }}</h3>
+    <p class="receita-card-texto texto-3-linhas">
+      É um clássico amado no Brasil, consistindo em carne (ou frango/berinjela) empanada e frita,
+      coberta com muito molho de tomate, presunto, e generosas camadas de queijo mussarela e
+      parmesão derretidos
+    </p>
+    <div class="receita-card-ingredientes">
+    {{ data().ingredientes_principais }}
+    </div>
+    <div class="receita-card-rodape">
+      <span class="receita-card-meta"
+        ><i class="far fa-clock"> {{ data().tempo_preparo }}</i> ⏱ 
+        <span class="tag-dificuldade tag-facil"> {{ data().dificuldade }}</span></span>
+      <a href="#" class="receita-card-link">Ver Receita <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</article>

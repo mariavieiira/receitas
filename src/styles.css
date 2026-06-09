@@ -1,20 +1,16 @@
-/* ================================================================
-   [DESIGN SYSTEM - CULINÁRIA PREMIUM & DINÂMICO]
-   ================================================================ */
-
 :root {
-  /* Cores Temáticas - Paleta Culinária Quente e Apetitosa */
-  --cor-fundo: #fff2e9;            /* Creme suave que traz aconchego */
-  --cor-escuro: #691e06;           /* Marrom-escuro premium para contraste sofisticado */
-  --cor-escuro-brilhante: #26201b;  /* Ligeiramente mais claro para hovers/fundos secundários */
-  --cor-texto: #2a2421;            /* Café escuro para leitura confortável */
-  --cor-texto-suave: #6b5e58;      /* Marrom-acinzentado suave para descrições */
-  --cor-cinza: #968780;            /* Cinza quente para metadados */
-  --cor-borda: rgba(42, 36, 33, 0.08); /* Borda sutil translúcida */
-  --cor-acento: #e85d26;           /* Laranja apetitoso de destaque */
-  --cor-acento-claro: rgba(232, 93, 38, 0.08); /* Fundo laranja suave translúcido */
-  --cor-acento-hover: #cf4e1e;     /* Laranja mais profundo para hover */
-  --cor-destaque-vermelho: #d92e2e; /* Vermelho quente culinário */
+  
+  --cor-fundo: #fff2e9;            
+  --cor-escuro: #691e06;          
+  --cor-escuro-brilhante: #26201b;  
+  --cor-texto: #2a2421;            
+  --cor-texto-suave: #6b5e58;     
+  --cor-cinza: #968780;           
+  --cor-borda: rgba(42, 36, 33, 0.08); 
+  --cor-acento: #e85d26;          
+  --cor-acento-claro: rgba(232, 93, 38, 0.08); 
+  --cor-acento-hover: #cf4e1e;     
+  --cor-destaque-vermelho: #d92e2e; 
   
   --cor-sucesso: #22c55e;
   --cor-erro: #ef4444;
@@ -198,6 +194,7 @@ button {
 
 .receitas-banner-titulo {
   font-family: var(--fonte-titulo);
+  
   font-size: 48px;
   max-width: 600px;
   line-height: 1.15;
