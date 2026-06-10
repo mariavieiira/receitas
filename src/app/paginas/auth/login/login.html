@@ -1,0 +1,67 @@
+  <!-- CORPO PRINCIPAL -->
+  <main class="auth-wrapper">
+
+
+    <!-- PAINEL DIREITO — Formulário -->
+    <div class="auth-formulario-wrapper">
+      <div class="auth-formulario-inner">
+        <h1 class="auth-form-titulo">Entrar</h1>
+        <p class="auth-form-subtitulo">
+          Não tem uma conta?
+          <a href="cadastro.html">Cadastre-se</a>
+        </p>
+
+        <div class="campo-grupo">
+          <label class="campo-label" for="email">E-mail</label>
+          <div class="campo-wrapper">
+            <i class="fa-regular fa-envelope campo-icone"></i>
+            <input
+              type="email"
+              id="email"
+              class="campo-input"
+              placeholder="seu@email.com"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+
+        <div class="campo-grupo">
+          <label class="campo-label" for="senha">Senha</label>
+          <div class="campo-wrapper">
+            <i class="fa-solid fa-lock campo-icone"></i>
+            <input
+              type="password"
+              id="senha"
+              class="campo-input"
+              placeholder="••••••••"
+              autocomplete="current-password"
+            />
+            <button
+              type="button"
+              class="campo-toggle-senha"
+              aria-label="Mostrar senha"
+              onclick="toggleSenha('senha', this)"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="auth-linha-extra">
+          <a href="#" class="auth-link-extra">Esqueceu a senha?</a>
+        </div>
+
+        <button class="btn-primario" type="button">
+          Entrar
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <div class="auth-divisor">
+          <div class="auth-divisor-linha"></div>
+          <span class="auth-divisor-texto">ou continue com</span>
+          <div class="auth-divisor-linha"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+

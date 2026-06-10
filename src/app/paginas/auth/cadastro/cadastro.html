@@ -1,0 +1,47 @@
+<body>
+    <div class="panel" id="panel-register">
+      <div class="field-row">
+        <div class="field" id="f-reg-fname">
+          <label>Nome</label>
+          <input type="text" id="reg-fname" placeholder="Ana" />
+          <p class="err-msg">Obrigatório.</p>
+        </div>
+        <div class="field" id="f-reg-lname">
+          <label>Sobrenome</label>
+          <input type="text" id="reg-lname" placeholder="Silva" />
+          <p class="err-msg">Obrigatório.</p>
+        </div>
+      </div>
+ 
+      <div class="field" id="f-reg-email">
+        <label>E-mail</label>
+        <input type="email" id="reg-email" placeholder="voce@exemplo.com" />
+        <p class="err-msg">Insira um e-mail válido.</p>
+      </div>
+ 
+      <div class="field" id="f-reg-pass">
+        <label>Senha</label>
+        <input type="password" id="reg-pass" placeholder="Mínimo 8 caracteres" oninput="checkStrength(this.value)" />
+        <div class="strength-bar" id="strength-bar">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p class="err-msg">Use ao menos 8 caracteres.</p>
+      </div>
+ 
+      <div class="field" id="f-reg-pass2">
+        <label>Confirmar senha</label>
+        <input type="password" id="reg-pass2" placeholder="Repita a senha" />
+        <p class="err-msg">As senhas não coincidem.</p>
+      </div>
+ 
+      <div class="check-row">
+        <input type="checkbox" id="terms" />
+        <label for="terms">Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Privacidade</a></label>
+      </div>
+ 
+      <button class="btn-submit" onclick="doRegister()">Criar conta</button>
+ 
+      <p class="foot-link">Já tem conta? <button onclick="switchTab('login')">Entrar</button></p>
+    </div>
+
+<body>
