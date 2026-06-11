@@ -1,47 +1,48 @@
-<body>
-    <div class="panel" id="panel-register">
-      <div class="field-row">
-        <div class="field" id="f-reg-fname">
-          <label>Nome</label>
-          <input type="text" id="reg-fname" placeholder="Ana" />
-          <p class="err-msg">Obrigatório.</p>
-        </div>
-        <div class="field" id="f-reg-lname">
-          <label>Sobrenome</label>
-          <input type="text" id="reg-lname" placeholder="Silva" />
-          <p class="err-msg">Obrigatório.</p>
-        </div>
-      </div>
- 
-      <div class="field" id="f-reg-email">
-        <label>E-mail</label>
-        <input type="email" id="reg-email" placeholder="voce@exemplo.com" />
-        <p class="err-msg">Insira um e-mail válido.</p>
-      </div>
- 
-      <div class="field" id="f-reg-pass">
-        <label>Senha</label>
-        <input type="password" id="reg-pass" placeholder="Mínimo 8 caracteres" oninput="checkStrength(this.value)" />
-        <div class="strength-bar" id="strength-bar">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <p class="err-msg">Use ao menos 8 caracteres.</p>
-      </div>
- 
-      <div class="field" id="f-reg-pass2">
-        <label>Confirmar senha</label>
-        <input type="password" id="reg-pass2" placeholder="Repita a senha" />
-        <p class="err-msg">As senhas não coincidem.</p>
-      </div>
- 
-      <div class="check-row">
-        <input type="checkbox" id="terms" />
-        <label for="terms">Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Privacidade</a></label>
-      </div>
- 
-      <button class="btn-submit" onclick="doRegister()">Criar conta</button>
- 
-      <p class="foot-link">Já tem conta? <button onclick="switchTab('login')">Entrar</button></p>
+<main class="login-container">
+  <section class="image-section">
+    <div class="menu-icon-wrapper">
+      <div class="hamburger-menu"></div>
+    </div>
+  </section>
+  <section class="form-section">
+    <header class="brand-header">
+    </header>
+
+    <div class="chef-animated-icon">
+       <i class="fa-solid fa-utensils"></i> 
     </div>
 
-<body>
+    <div class="auth-box">
+      <p class="auth-subtitle">
+        Crie sua conta e comece <br> a salvar suas receitas favoritas!
+        <br>Já tem uma conta? <a href="/login">Entrar</a>
+      </p>
+
+      <form (ngSubmit)="onRegister()">
+        <div class="input-group">
+          <i class="fa-regular fa-user input-icon"></i>
+          <input type="text" name="name" [(ngModel)]="registerData.name" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-regular fa-envelope input-icon"></i>
+          <input type="email" name="email" [(ngModel)]="registerData.email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-lock input-icon"></i>
+          <input type="password" name="password" [(ngModel)]="registerData.password" placeholder="Crie uma senha" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-lock input-icon"></i>
+          <input type="password" name="confirmPassword" [(ngModel)]="registerData.confirmPassword" placeholder="Confirme sua senha" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+
+  
+</main>
