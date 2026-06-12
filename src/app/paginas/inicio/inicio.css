@@ -73,17 +73,13 @@
   transform: translateY(-2px);
 }
 
-/* Área da Direita: Background Orgânico e Prato */
 .hero-imagem-container {
   position: relative;
   width: 52%;
   height: calc(100vh - 85px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: visible;
 }
 
-/* Curvatura assimétrica imitando a imagem original */
 .forma-laranja {
   position: absolute;
   top: -10%;
@@ -96,23 +92,22 @@
   z-index: 1;
 }
 
-/* Caixa do Prato Redondo */
+
 .prato-comida {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 750px;
 }
 
 .prato-comida img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  display: block;
   filter: drop-shadow(0px 20px 35px rgba(0, 0, 0, 0.3));
+  transform: rotate(7deg);
 }
 
 
@@ -129,25 +124,6 @@
     margin: 0 auto var(--espaco-xl) auto;
   }
 
-  .hero-imagem-container {
-    width: 100%;
-    height: 400px;
-  }
-
-  .forma-laranja {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    transform: none;
-  }
-
-  .prato-comida {
-    width: 320px;
-    height: 320px;
-  }
-}
 
 @media (max-width: 500px) {
   .hero-titulo {
@@ -155,7 +131,8 @@
   }
   
   .prato-comida {
-    width: 260px;
-    height: 260px;
+    width: 260px; /* Reduz para mobile mantendo quadrado */
+    height: auto;
   }
+}
 }
