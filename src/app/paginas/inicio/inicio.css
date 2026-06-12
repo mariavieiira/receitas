@@ -131,7 +131,7 @@
   }
   
   .prato-comida {
-    width: 260px; /* Reduz para mobile mantendo quadrado */
+    width: 260px; 
     height: auto;
   }
 }
